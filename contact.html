@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sun's Piano Studio | Contact</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="images/logo.svg" alt="logo"></a>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="instructors.html">INSTRUCTORS</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="contact.html"><button>CONTACT</button></a>
+    </header>
+
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Inquire about lessons</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="1c72e81d-e4ed-4ff5-8c63-6e01c6f96c0b">
+            <input type="text" name="parentname" placeholder="Parent's Name (if needed)" class="contact-inputs">
+            <input type="text" name="studentname" placeholder="Student's Name *" class="contact-inputs" required>
+            <input type="text" name="email" placeholder="Email *" class="contact-inputs" required>
+            <input type="text" name="age" placeholder="Student Age *" class="contact-inputs" required>
+            <textarea type="text" name="message" placeholder="Message*" class="contact-inputs" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="contact-right">
+            <img src="images/verticalpiano.jpg" alt="Piano">
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <footer>
+        <div class="footerNav">
+            <ul class="nav_links footer">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+            <div class="socialIcons">
+                <a href="mailto:linhansun@gmail.com"><i class="fa fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="footerBottom">
+            <p>Copyright &copy; 2024; Designed by <a href="https://www.linkedin.com/in/mattias-wong-b28561290/" target="_blank">Mattias Wong</a></p>
+        </div>
+
+
+    </footer>
+
+</body>

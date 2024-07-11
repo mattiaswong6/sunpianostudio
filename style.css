@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo {
+    cursor: pointer;
+    width: 50px;
+}
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 10%;
+    background-color: #322d29;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #0088a9;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+.landing {
+    display: flex;
+    min-height: 100vh;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/homepiano.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    /* justify-content: center; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* text-align: center; */
+    position: relative;
+
+    z-index: -1;
+
+    color: #edf0f1;
+    font-family: "Baskervville SC", serif;
+    text-decoration: none;
+}
+
+.landing.instructors {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/littlegirlplaying.jpg");
+}
+
+.landing.gallery {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/sheetmusic.jpg");
+}
+
+.landing h1 {
+    font-family: "Baskervville SC", serif;
+    font-weight: 500;
+    font-size: 75px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+.landing p {
+    font-size: 20px;
+    padding-bottom: 100px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+ 
+.mouse {
+    /* margin: 50px auto; */
+    z-index: 5;
+
+    padding-bottom: 150px;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .mouse-icon {
+     width: 25px;
+     height: 45px;
+     border: 2px solid white; /*you can change 'white' to a hex color*/
+     border-radius: 15px;
+     position:relative;
+     text-align: center;
+     cursor: pointer;
+  }
+  .mouse-wheel {
+    height: 6px;
+    margin: 2px auto 0;
+    display: block;
+    width: 3px;
+    background-color: white; /*you can change 'white' to a hex color*/
+    border-radius: 50%;
+    -webkit-animation: 1.6s ease infinite wheel-up-down;
+   -moz-animation: 1.6s ease infinite wheel-up-down;
+    animation: 1.6s ease infinite wheel-up-down;
+  }
+  @-webkit-keyframes wheel-up-down {
+      0% {
+          margin-top: 2px;
+          opacity: 0;
+      }
+      30% {
+          opacity: 1;
+      }
+      100% {
+          margin-top: 20px;
+          opacity: 0;
+      }
+  }
+  @-moz-keyframes wheel-up-down {
+      0% {
+          margin-top: 2px;
+          opacity: 0;
+      }
+      30% {
+          opacity: 1;
+      }
+      100% {
+          margin-top: 20px;
+          opacity: 0;
+      }
+  }@keyframes wheel-up-down {
+      0% {
+          margin-top: 2px;
+          opacity: 0;
+      }
+      30% {
+          opacity: 1;
+      }
+      100% {
+          margin-top: 20px;
+          opacity: 0;
+      }
+  }
+
+#curved svg {
+    display: block;
+    margin-top: -250px;
+    /* background-image: linear-gradient(transparent, white 75%), url("images/randompianosheet.jpg"); */
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-height: 90vh;
+    background-color: #edf0f1;
+
+    color: black;
+    font-family: "Cormorant Garamond";
+
+    /* background-image: linear-gradient(transparent, white 75%), url("images/randompianosheet.jpg"); */
+
+}
+
+#info p {
+    padding: 50px 10%;
+    font-size: 20px;
+}
+
+#info button {
+    padding: 10px 10px;
+    width: 300px;
+    height: 50px;
+    background-color: #edf0f1;
+    border: 1px solid #322d29;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+    color: #322d29;
+}
+
+#info button:hover {
+    background-color: rgba(209, 226, 230, 0.8);
+}
+
+.infobutton {
+    margin-top: 30px;
+}
+
+footer {
+    width: 100%;
+    margin-top: auto;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a {
+    text-decoration: none;
+    background-color: white;
+    padding: 10px;
+    margin: 10px 20px;
+    border-radius: 50%;
+}
+
+.socialIcons a:hover {
+    background-color: #0088a9;
+}
+
+.socialIcons a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.footerNav {
+    display: flex;
+    background-color: #322d29;
+    /* margin: 30px 0; */
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 10%;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footerBottom {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+
+/* -------------- Biography ------------ */
+
+#bio {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+    min-height: 90vh;
+    background-color: #edf0f1;
+
+    color: black;
+    font-family: "Cormorant Garamond";
+    padding: 1px 10%;
+
+    /* height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    font-family: "Montserrat", sans-serif;
+
+    padding-left: 10%;
+    padding-right: 10%;
+
+    background-color: #edf0f1; */
+    
+}
+
+#bioimg {
+    display: flex;
+    flex-direction: row;
+}
+
+#bio h1 {
+    font-size: 50px;
+}
+
+#bio p {
+    margin-top: 20px;
+    font-size: 25px;
+    line-height: 30px;
+    margin-right: 40px;
+}
+
+#bio img {
+    width: 100%;
+    height: auto;
+}
+
+/* -------------- Contact ------------- */
+
+.contact-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    font-family: "Montserrat", sans-serif;
+
+    padding-left: 10%;
+    padding-right: 10%;
+
+    background-color: #edf0f1;
+}
+
+.contact-right img{
+    max-width: 40vh;
+    height: auto;
+    padding: 10px 20px 10%;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+
+}
+
+.contact-left-title h2{
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.contact-left-title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #322d29;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #322d29;
+    border-radius: 20px;
+
+
+}
+
+.contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-inputs:focus {
+    border: 2px solid #0088a9
+}
+
+.contact-inputs::placeholder {
+    color: #a9a9a9;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* -------- Gallery --------------- */
+
+.gallery-container {
+    padding: 2rem;
+    background-color: #edf0f1;
+    display: flex;
+    justify-items: center;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 40px auto;
+    margin-top: -100px;
+}
+
+.slider {
+    display: flex;
+    max-height: 48rem;
+    aspect-ratio: 11 / 16;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+
+
+}
