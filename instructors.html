@@ -13,14 +13,49 @@
 <body>
     <header>
         <a href="index.html"><img class="logo" src="images/logo.svg" alt="logo"></a>
+
+
         <nav>
             <ul class="nav_links">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="instructors.html">INSTRUCTORS</a></li>
                 <li><a href="gallery.html">GALLERY</a></li>
+                <li id="contact_nav"><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
+        
         <a class="cta" href="contact.html"><button>CONTACT</button></a>
+
+
+        <div class="toggle_btn" onclick="showSidebar()">
+            <i class="fa fa-bars"></i>
+        </div>
+
+        <div class="dropdown_menu">
+            <div class="dropdown_cancel" onclick="hideSidebar()"><i class="fa fa-xmark"></i></div>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="instructors.html">INSTRUCTORS</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </div>
+
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector('.dropdown_menu')
+                const body = document.querySelector('body')
+                sidebar.style.display = 'flex'
+                body.style.position = 'fixed'
+            }
+            function hideSidebar() {
+                const sidebar = document.querySelector('.dropdown_menu')
+                const body = document.querySelector('body')
+                sidebar.style.display = 'none'
+                body.style.position = 'relative'
+
+            }
+        </script>
+
+
     </header>
     <div class="landing instructors">
         <h1>Our Instructors</h1>
@@ -42,23 +77,45 @@
     </div>
 
 
-    <div id="bio">
-        <h1>Linhan Sun</h1>
-        <div id="bioimg">
-            <p style="text-align:left">
+    <div class="bio">
+        <div class="desktop_bio">
+            <h1>Linhan Sun</h1>
+            <div class="bioimg">
+                <p style="text-align:left">
 
-                Linhan is a private piano instructor and current student of Gustavson School of Business at the University of Victoria. With over 10 years of classical piano training and having reached Level 10 in the Royal Conservatory of Music, Linhan brings a wealth of knowledge and expertise to his students. His diverse musical background allows him to teach a variety of genres, ensuring that each lesson is tailored to the individual needs and interests of his students. Linhan's passion for music is evident in his engaging teaching style, which inspires and motivates students to reach their full potential.
-                <br><br>
-                Beyond his formal training, Linhan is also a self-taught guitarist and an avid outdoorsman. His love for music extends beyond the piano, enriching his teaching with a broad perspective on musical expression and creativity. Linhan believes in providing a well-rounded musical education, fostering a deep appreciation for music in all its forms. His dedication to his students and his enthusiasm for music make him an exceptional teacher who can guide and support students on their musical journey.
-            </p>
+                    Linhan is a private piano instructor and current student of Gustavson School of Business at the University of Victoria. With over 10 years of classical piano training and having reached Level 10 in the Royal Conservatory of Music, Linhan brings a wealth of knowledge and expertise to his students. His diverse musical background allows him to teach a variety of genres, ensuring that each lesson is tailored to the individual needs and interests of his students. Linhan's passion for music is evident in his engaging teaching style, which inspires and motivates students to reach their full potential.
+                    <br><br>
+                    Beyond his formal training, Linhan is also a self-taught guitarist and an avid outdoorsman. His love for music extends beyond the piano, enriching his teaching with a broad perspective on musical expression and creativity. Linhan believes in providing a well-rounded musical education, fostering a deep appreciation for music in all its forms. His dedication to his students and his enthusiasm for music make him an exceptional teacher who can guide and support students on their musical journey.
+                </p>
 
-        <div id="bio-right">
-            <img src="images/linhanplaying.jpg" alt="Linhan performing">
+                <div class="bio-right">
+                    <img src="images/linhanplaying.jpg" alt="Linhan performing">
+                </div>
+
+            </div>
         </div>
+
+        <div class="mobile_bio">
+            <h1>Linhan Sun</h1>
+            <div class="bio-right">
+                <img src="images/linhanplaying.jpg" alt="Linhan performing">
+            </div>
+            <div class="bioimg">
+                <p style="text-align:left">
+
+                    Linhan is a private piano instructor and current student of Gustavson School of Business at the University of Victoria. With over 10 years of classical piano training and having reached Level 10 in the Royal Conservatory of Music, Linhan brings a wealth of knowledge and expertise to his students. His diverse musical background allows him to teach a variety of genres, ensuring that each lesson is tailored to the individual needs and interests of his students. Linhan's passion for music is evident in his engaging teaching style, which inspires and motivates students to reach their full potential.
+                    <br><br>
+                    Beyond his formal training, Linhan is also a self-taught guitarist and an avid outdoorsman. His love for music extends beyond the piano, enriching his teaching with a broad perspective on musical expression and creativity. Linhan believes in providing a well-rounded musical education, fostering a deep appreciation for music in all its forms. His dedication to his students and his enthusiasm for music make him an exceptional teacher who can guide and support students on their musical journey.
+                </p>
+            </div>
         </div>
 
 
     </div>
+
+
+
+
     <footer>
         <div class="footerNav">
             <ul class="nav_links footer">

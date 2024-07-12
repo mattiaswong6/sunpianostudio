@@ -13,15 +13,46 @@
 <body>
     <header>
         <a href="index.html"><img class="logo" src="images/logo.svg" alt="logo"></a>
+
+
         <nav>
             <ul class="nav_links">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="instructors.html">INSTRUCTORS</a></li>
                 <li><a href="gallery.html">GALLERY</a></li>
+                <li id="contact_nav"><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
+        
         <a class="cta" href="contact.html"><button>CONTACT</button></a>
+
+
+        <div class="toggle_btn" onclick="showSidebar()">
+            <i class="fa fa-bars"></i>
+        </div>
+
+        <div class="dropdown_menu">
+            <div class="dropdown_cancel" onclick="hideSidebar()"><i class="fa fa-xmark"></i></div>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="instructors.html">INSTRUCTORS</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </div>
+
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector('.dropdown_menu')
+                sidebar.style.display = 'flex'
+            }
+            function hideSidebar() {
+                const sidebar = document.querySelector('.dropdown_menu')
+                sidebar.style.display = 'none'
+            }
+        </script>
+
+
     </header>
+
     <div class="landing gallery">
         <h1>Gallery/Recordings</h1>
         <p> </p>
