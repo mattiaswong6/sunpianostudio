@@ -42,11 +42,16 @@
         <script>
             function showSidebar() {
                 const sidebar = document.querySelector('.dropdown_menu')
+                const body = document.querySelector('body')
                 sidebar.style.display = 'flex'
+                body.style.position = 'fixed'
             }
             function hideSidebar() {
                 const sidebar = document.querySelector('.dropdown_menu')
+                const body = document.querySelector('body')
                 sidebar.style.display = 'none'
+                body.style.position = 'relative'
+
             }
         </script>
 
