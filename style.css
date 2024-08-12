@@ -405,12 +405,51 @@ footer {
 /* -------- Gallery --------------- */
 
 .gallery-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #edf0f1;
     margin-top: -5px;
+
+    padding-bottom: 10vh;
+
+
+
+    /* margin-top: -5px;
     padding: 2rem;
     background-color: #edf0f1;
     display: flex;
-    justify-items: center;
+    justify-items: center; */
 }
+
+.gallery-container .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 0 15px;
+}
+
+.gallery-container .box .dream {
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.gallery-container .box .dream img {
+    width: 100%;
+    padding-bottom: 3%;
+    border-radius: 5px;
+}
+
+.gallery-container .box .dream video {
+    width: 100%;
+    padding-bottom: 3%;
+    border-radius: 5px;
+}
+
 
 .slider-wrapper {
     position: relative;
